@@ -1,9 +1,9 @@
-export interface Temp {
+export interface APIData {
   Prices: [];
   average: number;
   fromDate: string;
   intervalType: number;
-  tillDate:string;
+  tillDate: string;
 }
 
 export interface Prices {

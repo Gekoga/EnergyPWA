@@ -1,11 +1,11 @@
-import { defineStore } from 'pinia';
+import { defineStore } from "pinia";
 
-export const usePricesStore = defineStore('prices', {
+export const usePricesStore = defineStore("prices", {
   state: () => {
     return { prices: new Map<number, number>(), average: 0 };
   },
   actions: {
-    setAverage(average:number) {
+    setAverage(average: number) {
       this.average = average;
     },
     setPrices(prices: Map<number, number>) {

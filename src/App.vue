@@ -1,14 +1,13 @@
 <script setup lang="ts">
-import APIDataGatherer from './components/APIDataGatherer.vue';
-import DataExporter from './components/DataExporter.vue';
-import DatePicker from './components/DatePicker.vue';
-
+import APIDataGatherer from "./components/APIDataGatherer.vue";
+import DataExporter from "./components/DataExporter.vue";
+import DatePicker from "./components/DatePicker.vue";
 </script>
 
 <template>
-<DatePicker></DatePicker>
-<APIDataGatherer></APIDataGatherer>
-<DataExporter></DataExporter>
+  <DatePicker></DatePicker>
+  <APIDataGatherer></APIDataGatherer>
+  <DataExporter></DataExporter>
 </template>
 
 <style scoped>
