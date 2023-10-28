@@ -1,4 +1,4 @@
-import { extractDateString } from "@/utils/utilityFunctions";
+import { extractLocalDateString } from "@/utils/utilityFunctions";
 import { defineStore } from "pinia";
 
 const regex: RegExp = /:+/g;
@@ -16,17 +16,17 @@ export const useDatesStore = defineStore("dates", {
       const dateString = this.endDate.toISOString().replace(regex, "%3A");
       return dateString;
     },
-    getDate(): string {
-      const dateString = extractDateString(this.startDate);
+    getLocalDate(): string {
+      const dateString = extractLocalDateString(new Date(this.startDate));
       return dateString;
     }
   },
   actions: {
     setStartDate(year: number, month: number, day: number) {
-      this.startDate = new Date(year, month, day, 22);
+      this.startDate = new Date(year, month, day, 0);
     },
     setEndDate(year: number, month: number, day: number) {
-      this.endDate = new Date(year, month, day, 21, 59, 59, 999);
+      this.endDate = new Date(year, month, day, 23, 59, 59, 999);
     }
   }
 });

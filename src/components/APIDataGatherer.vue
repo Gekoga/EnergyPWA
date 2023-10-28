@@ -9,7 +9,7 @@ const datesStore = useDatesStore();
 const pricesStore = usePricesStore();
 
 const selectedDate = computed(() => {
-  return datesStore.getDate;
+  return datesStore.getLocalDate;
 });
 
 async function getAPIResponse() {

@@ -1,3 +1,3 @@
-export function extractDateString(dateTime: Date) {
-  return dateTime.toISOString().split("T", 1)[0];
+export function extractLocalDateString(dateTime: Date) {
+  return dateTime.toLocaleDateString().split("-").reverse().join("-");
 }
