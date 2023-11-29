@@ -1,5 +1,5 @@
 export interface APIData {
-  Prices: [];
+  Prices: Prices[];
   average: number;
   fromDate: string;
   intervalType: number;

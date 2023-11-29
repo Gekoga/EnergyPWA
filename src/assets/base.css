@@ -1,53 +1,128 @@
-/* color palette from <https://github.com/vuejs/theme> */
 :root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;
-  --vt-c-white-mute: #f2f2f2;
+  --materials-primary-00: 224, 36%, 00%;
+  --materials-primary-10: 224, 36%, 10%;
+  --materials-primary-17: 224, 36%, 17%;
+  --materials-primary-20: 224, 36%, 20%;
+  --materials-primary-30: 224, 36%, 30%;
+  --materials-primary-40: 224, 36%, 40%;
+  --materials-primary-50: 224, 36%, 50%;
+  --materials-primary-60: 224, 36%, 60%;
+  --materials-primary-70: 224, 36%, 70%;
+  --materials-primary-80: 224, 36%, 80%;
+  --materials-primary-90: 224, 36%, 90%;
+  --materials-primary-95: 224, 36%, 95%;
+  --materials-primary-98: 224, 36%, 98%;
+  --materials-primary-100: 224, 36%, 100%;
 
-  --vt-c-black: #181818;
-  --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
+  /* Neutral colors */
+  --material-neutral-00: 0, 0%, 0%;
+  --material-neutral-04: 220, 19%, 6%;
+  --material-neutral-06: 220, 14%, 8%;
+  --material-neutral-10: 220, 8%, 12%;
+  --material-neutral-12: 220, 10%, 14%;
+  --material-neutral-17: 220, 8%, 17%;
+  --material-neutral-20: 220, 6%, 20%;
+  --material-neutral-22: 220, 6%, 22%;
+  --material-neutral-24: 220, 5%, 23%;
+  --material-neutral-30: 220, 4%, 29%;
+  --material-neutral-40: 220, 4%, 38%;
+  --material-neutral-50: 220, 3%, 48%;
+  --material-neutral-60: 220, 3%, 57%;
+  --material-neutral-70: 220, 5%, 68%;
+  --material-neutral-80: 220, 7%, 79%;
+  --material-neutral-87: 220, 13%, 86%;
+  --material-neutral-90: 220, 17%, 90%;
+  --material-neutral-92: 220, 25%, 92%;
+  --material-neutral-94: 220, 38%, 95%;
+  --material-neutral-95: 220, 33%, 95%;
+  --material-neutral-96: 220, 44%, 96%;
+  --material-neutral-98: 220, 100%, 98%;
+  --material-neutral-99: 220, 100%, 99%;
+  --material-neutral-100: 0, 0%, 100%;
 
-  --vt-c-indigo: #2c3e50;
+  /* Neutral variants */
+  --material-neutral-variant-00: 0, 0%, 0%;
+  --material-neutral-variant-10: 220, 13%, 12%;
+  --material-neutral-variant-20: 220, 8%, 20%;
+  --material-neutral-variant-30: 220, 7%, 29%;
+  --material-neutral-variant-40: 220, 5%, 38%;
+  --material-neutral-variant-50: 220, 4%, 47%;
+  --material-neutral-variant-60: 220, 5%, 58%;
+  --material-neutral-variant-70: 220, 7%, 68%;
+  --material-neutral-variant-80: 220, 11%, 79%;
+  --material-neutral-variant-90: 220, 24%, 90%;
+  --material-neutral-variant-95: 220, 55%, 96%;
+  --material-neutral-variant-98: 220, 100%, 99%;
+  --material-neutral-variant-99: 220, 100%, 99%;
+  --material-neutral-variant-100: 0, 0%, 100%;
 
-  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
-  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+  /* Elevation level */
+  --elevation-light-level0: none;
+  --elevation-light-level1: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  --elevation-light-level2: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  --elevation-light-level3: 0px 1px 3px 0px rgba(0, 0, 0, 0.3), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+  --elevation-light-level4: 0px 2px 3px 0px rgba(0, 0, 0, 0.3), 0px 6px 10px 4px rgba(0, 0, 0, 0.15);
+  --elevation-light-level5: 0px 4px 4px 0px rgba(0, 0, 0, 0.3), 0px 8px 12px 6px rgba(0, 0, 0, 0.15);
 
-  --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
-}
+  --elevation-dark-level0: none;
+  --elevation-dark-level1: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  --elevation-dark-level2: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+  --elevation-dark-level3: 0px 1px 3px 0px rgba(0, 0, 0, 0.3), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+  --elevation-dark-level4: 0px 2px 3px 0px rgba(0, 0, 0, 0.3), 0px 6px 10px 4px rgba(0, 0, 0, 0.15);
+  --elevation-dark-level5: 0px 4px 4px 0px rgba(0, 0, 0, 0.3), 0px 8px 12px 6px rgba(0, 0, 0, 0.15);
 
-/* semantic color variables for this project */
-:root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
+  /* Overlay opacity values */
+  --state-opacity-hover: 0.08;
+  --state-opacity-focus: 0.12;
+  --state-opacity-press: 0.12;
+  --state-opacity-drag: 0.16;
+  --state-opacity-disabled: 0.38;
 
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
+  --color-primary-hsl: var(--materials-primary-20);
+  --color-primary-container-hsl: var(--materials-primary-90);
 
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
+  --color-primary: hsl(var(--color-primary-hsl));
+  --color-primary-container: hsl(var(--color-primary-container-hsl));
 
-  --section-gap: 160px;
-}
+  --color-on-primary-hsl: var(--materials-primary-100);
+  --color-on-primary-container-hsl: var(--materials-primary-10);
+  --color-inverse-primary-hsl: var(--materials-primary-80);
+  --color-primary-back-hsl: var(--materials-primary-95);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
+  --color-on-primary: hsl(var(--color-on-primary));
+  --color-on-primary-container: hsl(var(--color-on-primary-container));
+  --color-inverse-primary: hsl(var(--color-inverse-primary));
+  --color-primary-back: hsl(var(--color-primary-back-hsl));
 
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
+  --color-surface: hsl(var(--material-neutral-98));
+  --color-surface-dim: hsl(var(--material-neutral-87));
+  --color-surface-bright: hsl(var(--material-neutral-98));
+  --color-surface-container-lowest: hsl(var(--material-neutral-100));
+  --color-surface-container-low: hsl(var(--material-neutral-96));
+  --color-surface-container: hsl(var(--material-neutral-94));
+  --color-surface-container-high: hsl(var(--material-neutral-92));
+  --color-surface-container-highest: hsl(var(--material-neutral-90));
 
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
-  }
+  --color-surface-variant: hsl(var(--material-neutral-variant-90));
+  --color-on-surface: hsl(var(--material-neutral-10));
+  --color-on-surface-hsl: var(--material-neutral-10);
+  --color-on-surface-variant: hsl(var(--material-neutral-variant-30));
+  --color-inverse-surface: hsl(var(--material-neutral-20));
+  --color-on-inverse-surface: hsl(var(--material-neutral-95));
+
+  --color-outline: hsl(var(--material-neutral-variant-50));
+  --color-outline-variant: hsl(var(--material-neutral-variant-80));
+  --color-shadow: hsl(var(--material-neutral-00));
+
+  --color-surface-tint: var(--color-primary-hsl);
+  --color-scrim: hsl(var(--material-neutral-00));
+
+  --elevation-level0: var(--elevation-light-level0);
+  --elevation-level1: var(--elevation-light-level1);
+  --elevation-level2: var(--elevation-light-level2);
+  --elevation-level3: var(--elevation-light-level3);
+  --elevation-level4: var(--elevation-light-level4);
+  --elevation-level5: var(--elevation-light-level5);
 }
 
 *,
@@ -55,18 +130,17 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  font-weight: normal;
+  position: relative;
 }
 
 body {
   min-height: 100vh;
-  color: var(--color-text);
-  background: var(--color-background);
+  color: var(--color-primary);
+  background: var(--color-surface-container-highest);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
     Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
