@@ -15,7 +15,7 @@ export function getDataForLabels(): string[] {
 
   const labelArray: string[] = [];
   for (let index = 0; index < priceStore.getAmountOfEntries; index++) {
-    labelArray.push(`${index + 1}:00`);
+    labelArray.push(`${index}:00-${index + 1}:00`);
   }
   return labelArray;
 }

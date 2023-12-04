@@ -5,6 +5,7 @@ import VueDatePicker from "@vuepic/vue-datepicker";
 import { useDatesStore } from "@/stores/dates";
 import { extractLocalDateString } from "@/utils/utilityFunctions";
 import { APIDataGatherer } from "@/utils/APIDataGatherer";
+import { useDevelopmentMode } from "@/developmentMode";
 
 const datesStore = useDatesStore();
 const date = ref(new Date());
@@ -16,10 +17,8 @@ function setDate(valueString: string) {
   datesStore.setStartDate(dateValue.getFullYear(), dateValue.getMonth(), dateValue.getDate());
   datesStore.setEndDate(dateValue.getFullYear(), dateValue.getMonth(), dateValue.getDate());
 
-  //TODO: Weghalen wanneer in productie gezet wordt
-  apiDataGatherer.getAPIResponse();
-
-  // apiDataGatherer.getMockAPIResponse();
+  if (useDevelopmentMode) apiDataGatherer.getMockAPIResponse();
+  else apiDataGatherer.getAPIResponse();
 }
 
 setDate(extractLocalDateString(new Date()));

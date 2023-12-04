@@ -7,4 +7,3 @@ function replaceSeperatorsWithSpaceInDate(dateTime: Date) {
   const seperatorRegex: RegExp = /[-/]/gi;
   return dateTime.toLocaleDateString().replace(seperatorRegex, " ");
 }
-

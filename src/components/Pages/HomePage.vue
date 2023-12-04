@@ -29,10 +29,11 @@ import DateDisplay from "../Molecules/DateDisplay.vue";
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  min-width: 10rem;
 }
 
 #chart-area {
-  width: 80%;
+  width: 100%;
   height: 25rem;
 }
 
@@ -42,6 +43,10 @@ import DateDisplay from "../Molecules/DateDisplay.vue";
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+
+  #chart-area {
+    max-width: 60%;
   }
 }
 

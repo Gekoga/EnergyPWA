@@ -26,8 +26,8 @@ onMounted(() => {
         {
           label: "Gemiddelde uurtarief",
           data: [] as number[],
-          backgroundColor: "rgba(16, 21, 35, 0.5)",
-          borderColor: "rgba(16, 21, 35, 0.8)",
+          backgroundColor: "rgba(16, 21, 35, 1)",
+          borderColor: "rgba(16, 21, 35, 1)",
           type: "line"
         }
       ],
@@ -63,7 +63,5 @@ function updateChartData(chart: Chart) {
 #canvas-container {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
 }
 </style>

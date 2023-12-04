@@ -50,6 +50,8 @@ describe("Chart functions", () => {
 
     // Assert
     expect(labelAmount).toBe(mockedAPIData.Prices.length);
-    expect(labelData[labelAmount - 1]).toBe(`${mockedAPIData.Prices.length}:00`);
+    expect(labelData[labelAmount - 1]).toBe(
+      `${mockedAPIData.Prices.length - 1}:00-${mockedAPIData.Prices.length}:00`
+    );
   });
 });

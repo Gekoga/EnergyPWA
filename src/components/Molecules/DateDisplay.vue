@@ -15,6 +15,7 @@ const datesStore = useDatesStore();
 #date-display {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  place-items: center;
+  text-align: center;
 }
 </style>
