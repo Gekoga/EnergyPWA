@@ -1,5 +1,7 @@
 import { usePricesStore } from "@/stores/prices";
 
+// TODO: Wanneer er per kwartier gerekend wordt, hier het aanpassen dat het gemiddelde per uur weergegeven wordt, en niet per kwartier. 
+// Hiervoor kan er gebruik gemaakt worden van het gemiddelde per uur. 
 export function getDataForBarchart(): number[] {
   const priceStore = usePricesStore();
   return priceStore.getPrices;
