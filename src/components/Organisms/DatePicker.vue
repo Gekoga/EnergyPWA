@@ -1,14 +1,11 @@
 <script setup lang="ts">
-import { ref } from "vue";
-
-import VueDatePicker from "@vuepic/vue-datepicker";
+import { VueDatePicker } from "@vuepic/vue-datepicker";
 import { useDatesStore } from "@/stores/dates";
 import { extractLocalDateString } from "@/utils/utilityFunctions";
 import { APIDataGatherer } from "@/utils/APIDataGatherer";
 import { useDevelopmentMode } from "@/developmentMode";
 
 const datesStore = useDatesStore();
-const date = ref(new Date());
 const apiDataGatherer = new APIDataGatherer();
 
 function setDate(valueString: string) {
@@ -31,7 +28,6 @@ setDate(extractLocalDateString(new Date()));
     auto-apply
     @update:model-value="setDate"
     model-type="yyyy-MM-dd"
-    v-model="date"
   ></VueDatePicker>
 </template>
 

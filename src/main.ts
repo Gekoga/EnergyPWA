@@ -12,6 +12,7 @@ app.use(createPinia());
 
 app.mount("#app");
 
+
 //TODO
 // Create a calendar to select a date
 // Create button to select today's date
